@@ -20,3 +20,5 @@ noremap <C-l> <C-w>l
 " https://jameschambers.co.uk/vim-typescript-slow
 " Use new regular expression engine
 set re=0
+" ignore swp files in Netrw
+let g:netrw_list_hide= '.*\.swp$'
