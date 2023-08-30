@@ -1,17 +1,15 @@
 set ruler
 set number
 set laststatus=2
+set nocompatible
 syntax on
 filetype on
 filetype indent on
-filetype plugin indent on
+filetype plugin on
+set autoindent
 set expandtab shiftwidth=2 tabstop=2
-" autocmd FileType cpp setlocal colorcolumn=81
-" autocmd FileType cpp setlocal expandtab shiftwidth=2 tabstop=2
-" autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
-" autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
-colorscheme peachpuff
-" set spell spelllang=en_us
+" https://vi.stackexchange.com/questions/12782/see-what-indenting-style-is-being-used-in-vim
+" autocmd BufEnter *.tsx :setlocal filetype=typescript
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
@@ -20,5 +18,4 @@ noremap <C-l> <C-w>l
 " https://jameschambers.co.uk/vim-typescript-slow
 " Use new regular expression engine
 set re=0
-" ignore swp files in Netrw
 let g:netrw_list_hide= '.*\.swp$'
