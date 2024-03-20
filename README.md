@@ -8,6 +8,12 @@
 cp .vimrc ~/
 ```
 
+### NeoVim
+
+```
+cp init.lua ~/.config/nvim/init.lua
+```
+
 ### Terminal profile
 
 Import `Daniel.terminal` into Terminal profiles and set as the default
