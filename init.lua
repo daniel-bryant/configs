@@ -89,7 +89,7 @@ require("lazy").setup({
       local lspconfig = require('lspconfig')
 
       -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-      local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver' }
+      local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver', 'ruby_ls' }
       for _, lsp in ipairs(servers) do
         lspconfig[lsp].setup {
           -- on_attach = my_custom_on_attach,
@@ -228,3 +228,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
   end,
 })
+
+-- Fix indentation issue in Ruby
+-- https://github.com/nvim-treesitter/nvim-treesitter/issues/3363#issuecomment-1538607633
+vim.cmd('autocmd FileType ruby setlocal indentkeys-=.')
