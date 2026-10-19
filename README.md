@@ -2,6 +2,22 @@
 
 ## Setup
 
+### Terminal profile
+
+Download and import *Catppuccin Latte* and *Catppuccin Mocha* [colors](https://github.com/catppuccin/iterm)
+
+Create a new profile named Catppuccin
+
+Configure Light Mode and Dark Mode
+
+Set Catppuccin as the default profile
+
+### ohmyzsh
+
+Install *ohmyzsh* using the [basic installation](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
+
+Look over the available [plugins](https://github.com/ohmyzsh/ohmyzsh#plugins) and edit `~/.zshrc` accordingly
+
 ### Git
 
 ```
@@ -19,19 +35,3 @@ cp .vimrc ~/
 ```
 cp init.lua ~/.config/nvim/init.lua
 ```
-
-### Terminal profile
-
-Create a new profile named "Catppuccin Latte"
-
-Import *Catppuccin* [colors](https://github.com/catppuccin/iterm)
-
-or
-
-Import `Daniel.terminal` into Terminal profiles and set as the default
-
-### ohmyzsh
-
-Install *ohmyzsh* using the [basic installation](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
-
-Look over the available [plugins](https://github.com/ohmyzsh/ohmyzsh#plugins) and edit `~/.zshrc` accordingly
