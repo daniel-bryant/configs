@@ -3,9 +3,11 @@
 # Please adapt and uncomment the following lines:
 	name = Daniel Bryant
 	email = (email)
+[push]
+	autoSetupRemote = true
 [core]
 	excludesFile = ~/.gitignore
-[color "diff"]
-	frag = "magenta bold"
-	old = "black #f8cbcb"
-	new = "black #cbeecb"
+# [color "diff"]
+# 	frag = "magenta bold"
+# 	old = "black #f8cbcb"
+# 	new = "black #cbeecb"
